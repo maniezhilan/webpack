@@ -7,7 +7,7 @@
     "start": "webpack"
   },
   "author": "Mani Shanmugam",
-  "license": "ISC",
+  "license": "",
   "dependencies": {
     "foundation": "5.5.3",
     "jquery": "1.11.3"
