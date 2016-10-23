@@ -1,0 +1,39 @@
+{
+  "name": "webpack-bower",
+  "dependencies": {
+    "angular": "1.5.5",
+    "angular-animate": "1.5.5",
+    "angular-cookies": "1.5.5",
+    "angular-resource": "1.5.5",
+    "angular-route": "1.5.5",
+    "angular-sanitize": "1.5.5",
+    "basil.js": "0.4.4",
+    "fastclick": "1.0.6",
+    "foundation": "5.5.3",
+    "jquery": "1.11.3",
+    "jQuery.dotdotdot": "1.8.1",
+    "moment": "momentjs#2.10.6",
+    "picturefill": "3.0.2",
+    "slick-carousel": "1.6.0",
+    "youtube-iframe-api": "0.0.1",
+    "lodash": "4.13.0",
+    "terrific": "terrificjs#2.1.0",
+    "jquery-ui": "jqueryui#1.11.4"
+  },
+  "resolutions": {
+    "jquery": "1.11.3",
+    "angular": "1.5.5"
+  },
+  "authors": [
+    "Mani Shanmugam <maniezhilan@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
