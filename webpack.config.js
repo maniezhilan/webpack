@@ -14,18 +14,18 @@ module.exports = {
 	},
 	module: {
 	    loaders: [
-					{
-						test: /\.scss$/,
-						loader: ExtractTextPlugin.extract('style-loader', 'css!sass?indentedSyntax=true&sourceMap=true' +
-						  "includePaths[]=" +
-							(path.resolve(__dirname, "./bower_components")) + "&" +
-						  "includePaths[]=" +
-							(path.resolve(__dirname, "./sass")) + "&" +
-						  "includePaths[]=" +
-							(path.resolve(__dirname, "./bower_components/foundation/scss/")) + "&" +
-						  "includePaths[]=" +
-							(path.resolve(__dirname, "./node_modules")))
-					}
+			{
+				test: /\.scss$/,
+				loader: ExtractTextPlugin.extract('style-loader', 'css!sass?indentedSyntax=true&sourceMap=true' +
+				  "includePaths[]=" +
+					(path.resolve(__dirname, "./bower_components")) + "&" +
+				  "includePaths[]=" +
+					(path.resolve(__dirname, "./sass")) + "&" +
+				  "includePaths[]=" +
+					(path.resolve(__dirname, "./bower_components/foundation/scss/")) + "&" +
+				  "includePaths[]=" +
+					(path.resolve(__dirname, "./node_modules")))
+			}
 		]
 	},
 
