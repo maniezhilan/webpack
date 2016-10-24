@@ -7,7 +7,10 @@ var path = require('path'),
     bowerComponents = path.join(__dirname, 'bower_components');
 
 module.exports = {
-	entry: './app/app.js',
+	entry: {
+		'./app/app.js',
+		vendor: ['jquery']
+	}
 	output: {
 	    path: './app/dist',
 	    filename: 'app.js'
@@ -45,7 +48,10 @@ module.exports = {
             'window.jQuery': 'jquery'
         }),
         // split codebase into “chunks” 
-        //new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.js", Infinity),
+        new webpack.optimize.CommonsChunkPlugin({name: "vendor", 
+						 filename: "vendor.js",
+						 minChunks: Infinity
+						}),
     ],
 
     modulesDirectories: [
