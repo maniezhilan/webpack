@@ -8,9 +8,9 @@ var path = require('path'),
 
 module.exports = {
 	entry: {
-		'./app/app.js',
+		app : './app/app.js',
 		vendor: ['jquery']
-	}
+	},
 	output: {
 	    path: './app/dist',
 	    filename: 'app.js'
@@ -47,8 +47,8 @@ module.exports = {
             jQuery: "jquery",
             'window.jQuery': 'jquery'
         }),
-        // split codebase into “chunks” 
-        new webpack.optimize.CommonsChunkPlugin({name: "vendor", 
+        // split codebase into “chunks”
+        new webpack.optimize.CommonsChunkPlugin({name: "vendor",
 						 filename: "vendor.js",
 						 minChunks: Infinity
 						}),
@@ -67,4 +67,3 @@ module.exports = {
 
 
 };
-
